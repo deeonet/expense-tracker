@@ -51,6 +51,13 @@ h2{
 }
 li{
   list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+li span{
+  margin-left: auto;
+  margin-right: .5rem
 }
 #transaction-overview{
   width: 70%;
@@ -58,6 +65,11 @@ li{
   flex-direction: row;
   justify-content: space-between;
   margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+#transaction-overview div{
+  padding: .5rem;
 }
 input[type="submit"]{
   padding: 1rem;
@@ -74,6 +86,25 @@ input[type="submit"]:hover{
 p{
   margin-bottom: 0.5rem;
 }
-.transaction-item span{
-  margin-left: 15px;
+.transaction-item{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-bottom: 1rem;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+li div{
+  display: inline-block;
+  width: 10px;
+  background-color: black;
+  height: 2em;
+}
+.income{
+  background-color: #61d4b3;
+}
+.expense{
+  background-color: #F64B3C;
 }
