@@ -6,38 +6,35 @@
   <meta name="viewport" content="width=device-width initial-scale=1">
   <title>Expense Tracker</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-
   <div class="main-container">
-
     <h1 id="title">Expense Tracker</h1>
 
-    <div class="balance">
+    <div id="balance">
       <h2>Your Balance</h2>
-      <p id="total-balance">€<span>2500.00</span></p>
+      <p id="total-balance">€<span>0.00</span></p>
     </div>
 
     <div id="transaction-overview">
-      <div class="sect">
+      <div class="sect1">
         <p>INCOME</p>
-        <p id="total-income">€3500.00</p>
+        <p id="total-income">€<span>0.00</span></p>
       </div>
 
-      <div class="sect">
+      <div class="sect2">
         <p>EXPENSE</p>
-        <p id="total-expense">€1000.00</p>
+        <p id="total-expense">€<span>0.00</span></p>
       </div>
     </div>
 
     <div id="history">
       <h3>History</h3>
       <ul id="transaction-list">
-        <li class="transaction-item expense">Camera <span>-100</span></li>
-        <li class="transaction-item income">Cash <span>+300</span></li>
+
       </ul>
     </div>
 
@@ -46,7 +43,7 @@
       <form id="form" action="index.html" name="formA" method="post">
         <div class="tran-field">
           <label for="">Description</label>
-          <input type="text" id="description" name="" placeholder="Enter text..." value="">
+          <input type="text" id="description" maxlength="40" name="" placeholder="Enter text..." value="">
         </div>
         <div class="tran-field">
           <label for="">Amount</label>
@@ -60,19 +57,12 @@
           <input type="radio" name="amount-type" value="income">
           <label for="amount-typ">Income</label>
         </div>
-      </div>
+    </div>
 
-
-        <input type="submit" name="submit" value="Add transaction">
-      </form>
-
-
-
-
+    <input type="submit" name="submit" value="Add transaction">
+    </form>
   </div>
-
 
   <script type="text/javascript" src="index.js"></script>
 </body>
-
 </html>
